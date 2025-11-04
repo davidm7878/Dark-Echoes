@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 1rem;
+  color: white;
+  background-color: rgb(14, 14, 14);
+  font-family: sans-serif;
+}
+
+main {
+  display: grid;
+  gap: 1ch;
+}
+
+@media (width >= 500px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.episodeList ul {
+  display: grid;
+  gap: 1ch;
+
+  list-style-type: none;
+  padding: 0.25rem;
+}
+
+.episodeList li {
+  padding: 1ch;
+  border-bottom: 1px solid #3a3a3a;
+  font-size: large;
+}
+
+.episodeList li:hover {
+  cursor: pointer;
+  font-style: italic;
+  background-color: rgb(67, 67, 67);
+}
+
+.details {
+  padding: 0.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+h2,
+h3,
+p {
+  padding: 0.5rem;
+}
+
+button {
+  padding: 10px;
+  font-size: large;
+}
